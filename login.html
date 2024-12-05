@@ -1,0 +1,195 @@
+
+<!doctype html>
+<html>
+
+<head><title>login</title>
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<style>
+
+a:link{color:Black;}
+a:visited{color:Black;}
+
+#layer
+{
+width:100%;
+height:945px;
+background:rgb(2, 47, 21);
+margin-top:-7px;
+margin-left:-7px;
+opacity:0.7;
+position:fixed;
+z-index:-2;
+}
+
+#banner
+{
+width:100%;
+//height:945px;
+//background:cyan;
+margin-top:-87px;
+margin-left:-7px;
+//border:0.50px black solid;
+position:fixed;
+z-index:-3;
+}
+
+#main
+{
+text-align:left;
+background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(39, 207, 53));
+color:white;
+width:40%;
+margin-left:200px;
+margin-top:80px;
+//opacity:0.90; 
+box-shadow:10px 10px 10px rgb(4, 8, 77);
+border-radius:50px;
+}
+
+tr:hover {background-color: rgb(127, 232, 143);}
+
+
+#logo
+{
+width:40%;
+margin:auto;
+opacity:1;
+}
+
+table{ width:100%;margin:auto;}
+input[type=text],[type=number]{width:95%;height:35px;border-radius:10px;font-size:15px;}
+input[type=email],{width:95%;height:35px;border-radius:10px;font-size:15px;}
+input[type=submit],[type=reset]{width:30%;height:30px; margin-right:10px;border-radius:10px;}
+
+</style>
+
+<body>
+
+
+<div id="banner">
+<img src="images/cacbn.jpg" width="100%" height="100%">
+</div>
+
+
+<div id="main">
+<div id="logo">
+<img src="images/logo1.png" width="100%" height="100%">
+</div>
+
+<table cellpadding="12">
+
+<form >
+
+<tr>
+<td><label style="font-size:20px;"><b>Customer Name</b></label></td>
+<td><input type="text" placeholder=" name here....." pattern="[a-z,A-Z]{1,30}" required</td>
+</tr>
+
+<tr>
+<td><label style="font-size:20px;"><b>Phone Number</b></label></td>
+<td><input type="text" placeholder=" Phone Number....." </td>
+</tr>
+
+<tr><td><label style="font-size:20px;"><b>DOB</b></label></td>
+    <td><input type="date"></td>
+    </tr>
+    
+    <tr><td><label style="font-size:20px;"><b>Profile picture</b></label></td>
+        <td><input type="File"></td>
+        </tr>
+        
+<tr>
+<td><label style="font-size:20px;"><b>E-mail Address</b></label></td>
+<td><input type="text" placeholder=" E-mail Here....." </td>
+</tr>
+
+<tr>
+<td><label style="font-size:20px;"><b>Gender</b></label></td>
+<td>
+Male<input type="radio" value="male" name="gender">
+Female<input type="radio" value="female" name="gender">
+Others<input type="radio" value="Others" name="gender">
+</td>
+</tr>
+
+<tr>
+<td><label style="font-size:20px;"><b>Address</b></label></td>
+<td><input type="text" placeholder="House no. /Building no." </td>
+</tr>
+
+<tr>
+<td></td>
+<td><input type="text" placeholder="PIN/ZIP Code" style="width:40%;margin-right:10px;">
+</tr>
+
+
+
+
+
+<tr><td><label style="font-size:20px;"><b>Country</b></label></td>
+    <td >
+    <!--
+    <select name="country" size="4">
+    -->
+    <select name="country" >
+    <option value="" >Select Country</option> <option value="india" >India</option>
+    <option value="usa" >Usa</option>
+    <option value="uk" >Uk</option>
+    <option value="Australlia" >Australlia</option>
+    <option value="japan">Japan</option>
+    </select>
+    </td></tr>
+  
+    
+    <tr><td><label style="font-size:20px;"><b>State</b></label></td>
+        <td >
+        <!--
+        <select name="State" size="4">
+        -->
+        <select name="State" >
+            <option value="" >Select State</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Goa">UK</option>
+            <option value="UP">UP</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Kerela">Kerela</option>
+            <option value="Indore">Indore</option>
+            <option value="Rajasthan">Rajasthan</option>
+        </select>
+        </td></tr>
+
+
+<tr>
+<td><label style="font-size:20px;"><b> Alt.Phone</b></label></td>
+<td><input type="number" placeholder="other Ph number...." </td>
+</tr>
+
+<tr>
+<tr>
+<td><label style="font-size:20px;"><b>Mode of Payment</b></label></td>
+<td>
+Cash on Delivery<input type="radio" value="COD" name="payment">
+UPI<input type="radio" value="UPI" name="payment">
+Credit Card<input type="radio" value="Credit Card" name="payment">
+Debit Card<input type="radio" value="Debit Card" name="payment">
+</td>
+</tr>
+
+
+<tr>
+<td></td>
+<td><button style="cursor:pointer; width:30%; height:30px; border-radius:10px;"><a href="gamlaxy.html">Submit</button></li>
+<input type="reset"></td>
+</tr>
+
+</form>
+</table>
+</div>
+
+
+
+</html>

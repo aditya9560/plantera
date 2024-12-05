@@ -1,0 +1,455 @@
+
+
+<!doctype html>
+<html>
+
+<head><title>Categories</title>
+</head>
+
+<style>
+
+a:link{color:Black; text-decortion:none;}
+a:visited{color:Black; text-decortion:none;}
+
+@Keyframes opacity
+{
+from{ opacity: 0%;}
+to{opacity: 100%;}
+}
+    
+*html{scroll-behavior: smooth;
+transition: 02s;}
+
+
+body{
+
+background-image: url("images/plantbg1.jpg");
+}
+
+#main
+{
+width:90%;
+margin:auto;
+//height:500px;
+//background:cyan;
+}
+
+#card
+{
+width:80%;
+height:850px;
+margin:auto;
+//background:green;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#crd
+{
+width:17%;
+height:380px;
+background:rgb(79, 123, 99);
+box-shadow:5px 5px 5px rgb(67, 132, 83);
+transition:0.50s;
+}
+
+#crd:hover
+{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(124, 174, 93));
+border-radius:15px;
+box-shadow:10px 10px 10px rgb(171, 239, 130);
+transform:scale(1.05) ;
+}
+
+#dvimg
+{
+width:90%;
+//height:300px;
+margin:auto;
+margin-top:10px;
+}
+
+
+.info
+{
+//margin-left:-40px;
+list-style:none;
+}
+
+#text
+{
+margin-left:13px;
+font-size:10px;
+}
+
+.button
+{
+cursor:pointer;
+width:30%;
+height:20%; 
+font-size:11px;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+	body{
+
+        background-image: url("images/plantbg1.jpg");
+    }
+
+#card
+{
+width:80%;
+height:1520px;
+margin:auto;
+//background:green;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#crd
+{
+width:47%;
+height:290px;
+background:rgb(193, 202, 210);
+box-shadow:5px 5px 5px grey;
+}
+
+#dvimg
+{
+width:90%;
+//height:170px;
+margin:auto;
+margin-top:5px;
+}
+
+#text
+{
+font-size:17px;
+text-align:center;
+}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+	body{
+
+        background-image: url("images/plantbg1.jpg");
+    }
+#card
+{
+width:80%;
+height:1850px;
+margin:auto;
+//background:green;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#crd
+{
+width:47%;
+height:350px;
+background:rgb(193, 202, 210);
+box-shadow:5px 5px 5px grey;
+}
+
+#dvimg
+{
+width:90%;
+//height:220px;
+margin:auto;
+margin-top:9px;
+}
+
+#text
+{
+font-size:21.5px;
+text-align:right;
+}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+	body{
+
+        background-image: url("images/plantbg1.jpg");
+    }
+
+#card
+{
+width:80%;
+height:2350px;
+margin:auto;
+//background:green;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#crd
+{
+width:48%;
+height:450px;
+background:rgb(193, 202, 210);
+box-shadow:5px 5px 5px grey;
+}
+
+#dvimg
+{
+width:90%;
+//height:270px;
+margin:auto;
+margin-top:8px;
+}
+
+#text
+{
+font-size:28px;
+text-align:right;
+}
+
+.info
+{
+list-style:none;
+}
+
+
+}
+
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{
+	body{
+
+        background-image: url("images/plantbg1.jpg");
+    }
+
+#card
+{
+width:80%;
+height:620px;
+margin:auto;
+//background:green;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#crd
+{
+width:19%;
+height:300px;
+background:rgb(193, 202, 210);
+box-shadow:5px 5px 5px grey;
+}
+
+#dvimg
+{
+width:90%;
+//height:180px;
+margin:auto;
+margin-top:8px;
+}
+
+#text
+{
+font-size:18px;
+text-align:right;
+}
+
+.info
+{
+list-style:none;
+}
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+	body{
+
+        background-image: url("images/plantbg1.jpg");
+    }
+#card
+{
+width:80%;
+height:850px;
+margin:auto;
+//background:green;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#crd
+{
+width:17%;
+height:380px;
+//background:orange;
+}
+
+#dvimg
+{
+width:90%;
+//height:250px;
+margin-top:10px;
+}
+
+#text
+{
+font-size:23px;
+text-align:right;
+}
+
+.info
+{
+list-style:none;
+}
+
+
+}
+
+
+
+</style>
+
+<body>
+
+<div id="main">
+<img src="images/cacbn.jpg" width="100%" height="100%">
+</div>
+
+<br/>
+
+<div id="card">
+
+<div id="crd">
+<div id="dvimg"><img src="images/h1.jpg" width="100%" height="100%"></div>
+<b id="text">Broken Heart Plant</b>
+<ol class="info">
+<li><button> Cart</button>
+<button><a href="webform.html">Buy Now</button></li>
+    <br/> ₹550
+</ol>
+</div>
+<!-- ********************************************************-->
+
+<div id="crd">
+<div id="dvimg"><img src="images/h2.jpg" width="100%" height="100%"></div>
+<b id="text">Money Plant Golden</b>
+<ol class="info">
+<li><button> Cart</button>
+<button><a href="webform.html">Buy Now</button></li>
+    <br/> ₹450
+</ol>
+</div>
+<!-- ********************************************************-->
+
+<div id="crd">
+<div id="dvimg"><img src="images/h3.jpg" width="100%" height="100%"></div>
+<b id="text">Syngonium Pink Plant</b>
+<ol class="info">
+<li><button> Cart</button>
+<button><a href="webform.html">Buy Now</button></li>
+    <br/> ₹598
+</ol>
+</div>
+<!-- ********************************************************-->
+
+<div id="crd">
+<div id="dvimg"><img src="images/h4.jpg" width="100%" height="100%"></div>
+<b id="text">Chlorophytum Spider Plant</b>
+<ol class="info">
+<li><button> Cart</button>
+<button><a href="webform.html">Buy Now</button></li>
+    <br/> ₹590
+</ol>
+</div>
+<!-- ********************************************************-->
+
+<div id="crd">
+<div id="dvimg"><img src="images/h5.jpg" width="100%" height="100%"></div>
+<b id="text">Money Plant Variegated</b>
+<ol class="info">
+<li><button> Cart</button>
+<button><a href="webform.html">Buy Now</button></li>
+    <br/> ₹565
+</ol>
+</div>
+<!-- ********************************************************-->
+
+<div id="crd">
+<div id="dvimg"><img src="images/h6.jpg" width="100%" height="100%"></div>
+<b id="text">Money Plant N'Joy</b>
+<ol class="info">
+<li><button> Cart</button>
+<button><a href="webform.html">Buy Now</button></li>
+    <br/> ₹450
+</ol>
+</div>
+<!-- ********************************************************-->
+
+<div id="crd">
+<div id="dvimg"><img src="images/h7.jpg" width="100%" height="100%"></div>
+<b id="text">Peperomia Green</b>
+<ol class="info">
+<li><button> Cart</button>
+<button><a href="webform.html">Buy Now</button></li>
+   <br/> ₹400
+</ol>
+</div>
+<!-- ********************************************************-->
+
+<div id="crd">
+<div id="dvimg"><img src="images/h8.jpg" width="100%" height="100%"></div>
+<b id="text">Betel Leaf Plant</b>
+<ol class="info">
+<li><button> Cart</button>
+<button><a href="webform.html">Buy Now</button></li>
+    <br/> ₹308
+</ol>
+</div>
+<!-- ********************************************************-->
+
+<div id="crd">
+<div id="dvimg"><img src="images/h9.jpg" width="100%" height="100%"></div>
+<b id="text">Philodendron </b>
+<ol class="info">
+<li><button> Cart</button>
+<button><a href="webform.html">Buy Now</button></li>
+    <br/> ₹380
+</ol>
+</div>
+<!-- ********************************************************-->
+
+<div id="crd">
+<div id="dvimg"><img src="images/h10.jpg" width="100%" height="100%"></div>
+<b id="text">Golden Sedum </b>
+<ol class="info">
+<li><button> Cart</button>
+<button><a href="webform.html">Buy Now</button></li>
+    <br/> ₹350
+</ol>
+</div>
+<!-- ********************************************************-->
+
+
+</div>
+
+
+</html>
